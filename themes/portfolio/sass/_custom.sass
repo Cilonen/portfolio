@@ -1,0 +1,88 @@
+// Custom
+// ------
+// This file is used to define custom overrides and
+// style changes to be used for building your theme.
+// Documentation: http://sass-lang.com/docs/yardoc/_index.html
+
+// Import variables and mixins to be used.
+@import _config.sass
+@import _sprites.sass
+
+#header
+  @include transition(all 0.4s ease)
+  height: 100px
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 99
+  background-color: #fff
+  padding: 0 20px
+  .about-open &
+    top: 200px
+  #name-and-slogan
+    float: left
+    margin-top: 30px
+    margin-right: 20px
+  #block-system-main-menu
+    float: left
+    ul
+      li
+        float: left
+        list-style-type: none
+        list-style-image: none
+#main
+  @include transition(all 0.4s ease)
+  margin-top: 100px
+  .about-open &
+    margin-top: 300px
+.slide
+  display: inline-block
+  width: auto !important
+  img
+    width: auto
+    height: 100%
+
+// slideshow
+.bx-controls
+  .bx-default-pager
+    position: absolute
+    bottom: 15px
+    left: 10px
+    float: left
+    display: inline-block
+    width: 50px
+    height: 50px
+    background-color: rgba(255, 255, 255, .7)
+    border-radius: 25px
+    padding-top: 16px
+    padding-left: 10px
+    font-size: 18px
+    letter-spacing: -2px
+  .bx-controls-direction
+    position: absolute
+    bottom: 15px
+    right: 10px
+    font-family: "Entypo"
+    font-size: 55px
+    a
+      display: inline-block
+      width: 50px
+      height: 50px
+      background-color: rgba(255, 255, 255, .7)
+      border-radius: 25px
+      text-decoration: none
+      color: #000
+      padding-left: 14px
+      padding-top: 16px
+      margin-left: 10px
+      @include transition(all 0.4s ease)
+      &:hover
+        background-color: #FFF
+      &.bx-next
+        padding-left: 18px
+
+
+
+
+
